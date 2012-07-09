@@ -1,0 +1,21 @@
+body{
+
+  color: #FFF;
+  background-color: #444;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+h1{ text-align: center; font-size:36px;}
+h1, h2{ 
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+  font-weight: 200;
+  text-shadow: 2px 2px #333;
+}
+label{
+  display:block;
+}
+.links{ background-color:#333; padding: 5px;}
+a{ color:#FFFFCC;}
+input{ border: 3px solid #FFCCCC; color:#FFFFCC; font-size:24px; background-color:#000; padding:5px;}
+.content{ width:600px; margin-left:auto; margin-right:auto;}
+
+.flash{ font-size:24px; color:#333; background-color:#FFCCCC; border:3px solid #FF99CC; padding:10px;}

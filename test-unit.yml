@@ -1,0 +1,8 @@
+color_schemes:
+  standard:
+    success:
+      name: green
+      bold: true
+    failure:
+      name: red
+      bold: true

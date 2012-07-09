@@ -1,0 +1,31 @@
+<form action="/guess" method="post" enctype="multipart/form-data">
+  <label for="file">Please guess an anagram!</label>
+  <input type="text" name="word"><br />
+  <input type="submit" name="submit">
+</form>
+
+<h2>Results</h2>
+<% if !@results %>
+  <p>No attempts have been made yet</p>
+<% else %>
+  <table>
+    <tr>
+      <th>
+        Word
+      </th>
+      <th>
+        Match
+      </th>
+    </tr>
+    <% @results.each do |result| %>
+      <tr>
+        <td>
+          <%= result["word"] %>
+        </td>
+        <td>
+          <%= result["matches"]? result["matches"].join(", ") : "No match" %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>

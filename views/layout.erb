@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div class="links">
+      <a href="/upload">Upload another file</a> <a href="/">Back to results</a>
+    </div>
+    
+    <div class="content">
+      <% %w[notice error warning alert info].each do |key| %>
+        <% if flash[key] %>
+          <div id="#{key}" class="flash">
+            <%= flash[key] %>
+          </div>
+        <% end %>
+      <% end %>
+      <h1>Anagrammer</h1>
+      <%= yield %>
+    </div>
+  </body>
+</html>
